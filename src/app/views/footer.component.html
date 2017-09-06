@@ -1,0 +1,16 @@
+<footer>
+    <section class="container-fluid">
+        <nav class="pull-left">
+            <ul>
+                <li *ngFor="let footerOption of footerOptions">
+                    <a href="{{ footerOption.url }}">
+                        {{ footerOption.label }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright pull-right">
+            &copy;&nbsp;{{ currentYear }}&nbsp;<a href="http://www.naat.com.mx">Estrategía Corporativa Naat</a>, todos los derechos reservados.
+        </p>
+    </section>
+</footer>

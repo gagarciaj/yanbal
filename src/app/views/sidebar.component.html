@@ -1,0 +1,15 @@
+<section class="sidebar">
+    <section class="sidebar-wrapper">
+        <section class="logo text-center">
+            <img src="{{ companyLogo }}" />
+        </section>
+        <ul class="nav">
+            <li *ngFor="let sidebarOption of sidebarOptions">
+                <a routerLink="{{sidebarOption.route}}" routerLinkActive="active">
+                    <i class="pe-7s-{{ sidebarOption.icon }}"></i>
+                    <p>{{ sidebarOption.label }}</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</section>
